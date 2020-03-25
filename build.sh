@@ -1,0 +1,1 @@
+java -jar /usr/local/lib/plantuml/plantuml.jar  "./**/*.puml"
