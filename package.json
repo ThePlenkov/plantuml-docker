@@ -1,0 +1,27 @@
+{
+  "name": "plantuml-docker",
+  "version": "1.0.0",
+  "description": "Docker image for plantuml",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "run-script-os",
+    "build:windows": "docker run --rm -it  -v %INIT_CWD%/test:/app theplenkov/plantuml-docker:latest",
+    "build:default": "docker run --rm -it  -v $INIT_CWD/test:/app theplenkov/plantuml-docker:latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThePlenkov/plantuml-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThePlenkov/plantuml-docker/issues"
+  },
+  "homepage": "https://github.com/ThePlenkov/plantuml-docker#readme",
+  "dependencies": {
+    "run-script-os": "^1.1.1"
+  }
+}
