@@ -5,7 +5,7 @@ Docker image for plantuml
 # How to use
 
 ```
-docker run --rm -it  -v ${PWD}:/app plantuml:latest
+docker run --rm -it  -v ${PWD}:/app theplenkov/plantuml-docker
 ```
 
 So this image is designed to launch single command to generate UML diagrams for all \*.puml files found in the folder mount as /app module
