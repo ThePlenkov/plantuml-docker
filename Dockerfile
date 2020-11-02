@@ -11,7 +11,7 @@ WORKDIR /usr/local/lib/plantuml
 
 ENTRYPOINT [ "java", "-jar",  "plantuml.jar"]
 
-CMD [ "-o", "puml", "/app/**/*.puml" ]
+CMD [ "-o", "img", "/app/**/*.puml" ]
 
 
 
